@@ -1,0 +1,106 @@
+/* Global font */
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+/* Tweet card */
+.tweet {
+  width: 100%;
+  max-width: 580px;
+  background-color: #fff;
+  border: 1px solid #cfd9de;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+/* Avatar image */
+.thumbnail {
+  border-radius: 50%;
+}
+
+/* Text content */
+.main-content {
+  flex-grow: 1;
+}
+
+/* Header: name + metadata */
+.tweet-header {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+/* Styling */
+.name {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.metadata {
+  color: #71767b;
+  font-size: 15px;
+}
+
+.message {
+  color: #0f1419;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+/* Action icons */
+.actions-row {
+  max-width: 425px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  fill: #536471;
+}
+
+.action-count {
+  color: #536471;
+  font-size: 13px;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+  .tweet {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tweet-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actions-row {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+}

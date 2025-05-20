@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+/* Header */
+header {
+  background-color: tomato;
+  height: 60px;
+  padding: 12px;
+  flex-shrink: 0;
+}
+
+/* Wrapper div (the one wrapping nav, main, aside) */
+body > div {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Left column */
+nav {
+  background-color: coral;
+  width: 100px;
+  padding: 12px;
+}
+
+/* Center column */
+main {
+  background-color: moccasin;
+  flex: 1;
+  padding: 12px;
+}
+
+/* Right column */
+aside {
+  background-color: sandybrown;
+  width: 100px;
+  padding: 12px;
+}
+
+/* Footer */
+footer {
+  background-color: slategray;
+  height: 100px;
+  padding: 12px;
+  flex-shrink: 0;
+}
